@@ -1,0 +1,5 @@
+{
+  "name": "Cinematic Face Transformer",
+  "description": "An advanced AI visual assistant that transforms a user's photo into a cinematic, high-end image based on the visual style of a reference image, seamlessly replacing the subject's face.",
+  "requestFramePermissions": []
+}
