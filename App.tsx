@@ -175,11 +175,11 @@ export default function App() {
         </main>
         
         <footer className="fixed bottom-0 left-0 right-0 p-4 bg-gray-900/80 backdrop-blur-sm border-t border-gray-700">
-          <div className="max-w-7xl mx-auto flex justify-center items-center gap-4">
+          <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-4">
             <button
               onClick={handleGenerateClick}
               disabled={!userImage || !generatedJson || isLoadingStage1 || isLoadingStage3}
-              className="flex items-center gap-2 px-8 py-3 text-lg font-bold text-white bg-purple-600 rounded-full shadow-lg hover:bg-purple-700 disabled:bg-gray-600 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105 disabled:scale-100 focus:outline-none focus:ring-4 focus:ring-purple-400"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3 text-lg font-bold text-white bg-purple-600 rounded-full shadow-lg hover:bg-purple-700 disabled:bg-gray-600 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105 disabled:scale-100 focus:outline-none focus:ring-4 focus:ring-purple-400"
             >
               <SparklesIcon />
               {isLoadingStage3 ? 'Generating...' : 'Generate Image'}
@@ -188,7 +188,7 @@ export default function App() {
               <button
                 onClick={handleReset}
                 disabled={isLoadingStage1 || isLoadingStage3}
-                className="flex items-center gap-2 px-6 py-3 font-semibold text-gray-300 bg-gray-700 rounded-full hover:bg-gray-600 disabled:opacity-50 transition-colors"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 font-semibold text-gray-300 bg-gray-700 rounded-full hover:bg-gray-600 disabled:opacity-50 transition-colors"
               >
                 <UndoIcon />
                 Start Over
@@ -198,7 +198,7 @@ export default function App() {
               <a
                 href={finalImageUrl}
                 download="cinematic_portrait.png"
-                className="flex items-center gap-2 px-6 py-3 font-semibold text-white bg-cyan-600 rounded-full hover:bg-cyan-700 transition-colors"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 font-semibold text-white bg-cyan-600 rounded-full hover:bg-cyan-700 transition-colors"
               >
                 <DownloadIcon />
                 Download
